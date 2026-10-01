@@ -1,7 +1,8 @@
+
 /* =========================================
    UNIFER ENGINEERS
    Corporate Website
-   ========================================= */
+========================================= */
 
 * {
     margin: 0;
@@ -23,7 +24,7 @@ body {
 
 /* =========================================
    WEBSITE FRAME
-   ========================================= */
+========================================= */
 
 .site-frame {
     max-width: 1380px;
@@ -36,7 +37,7 @@ body {
 
 /* =========================================
    HEADER
-   ========================================= */
+========================================= */
 
 header {
     background: #29485c;
@@ -63,8 +64,6 @@ header {
     width: 205px;
     height: 82px;
     object-fit: contain;
-
-    /* helps the square logo visually blend */
     mix-blend-mode: screen;
 }
 
@@ -80,10 +79,8 @@ nav {
 nav a {
     color: #e5f5f7;
     text-decoration: none;
-
     font-size: 16px;
     font-weight: 600;
-
     transition: 0.25s ease;
 }
 
@@ -94,18 +91,16 @@ nav a:hover {
 
 /* =========================================
    HERO
-   ========================================= */
+========================================= */
 
 .hero {
     background: #29485c;
-
     min-height: 520px;
 
     display: flex;
     align-items: center;
 
     padding: 85px 85px;
-
     color: #ffffff;
 }
 
@@ -116,43 +111,34 @@ nav a:hover {
 .hero h1 {
     font-size: 54px;
     line-height: 1.12;
-
     margin-bottom: 25px;
-
     font-weight: 700;
 }
 
 .hero p {
     max-width: 720px;
-
     font-size: 19px;
     line-height: 1.8;
-
     color: #d9eef1;
 }
 
 
 /* =========================================
    BUTTON
-   ========================================= */
+========================================= */
 
 .btn {
     display: inline-block;
-
     margin-top: 30px;
-
     padding: 14px 28px;
 
     background: #8bd5df;
     color: #29485c;
 
     text-decoration: none;
-
     font-size: 15px;
     font-weight: 700;
-
     border-radius: 3px;
-
     transition: 0.25s ease;
 }
 
@@ -163,142 +149,111 @@ nav a:hover {
 
 /* =========================================
    CONTENT CONTAINER
-   ========================================== */
+========================================= */
 
 .container {
     max-width: 1050px;
-
     margin: 0 auto;
-
     padding: 75px 50px;
 }
 
 .section-title {
     color: #29485c;
-
     font-size: 32px;
-
     line-height: 1.25;
-
     margin-bottom: 22px;
 }
 
 .section-text {
     max-width: 950px;
-
     font-size: 16px;
-
     color: #52636d;
-
     margin-bottom: 20px;
 }
 
 
 /* =========================================
    CARDS
-   ========================================= */
+========================================= */
 
 .cards {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 22px;
-
     margin-top: 35px;
 }
 
 .card {
     background: #f2f8fa;
-
     padding: 28px;
-
     border: 1px solid #d6e6ea;
-
     border-top: 4px solid #8bd5df;
 }
 
 .card h3 {
     color: #29485c;
-
     font-size: 19px;
-
     margin-bottom: 10px;
 }
 
 .card p {
     color: #596a73;
-
     font-size: 15px;
 }
 
 
 /* =========================================
    PAGE HEADER
-   ========================================= */
+========================================= */
 
 .page-header {
     background: #29485c;
-
     color: #ffffff;
-
     padding: 65px 85px;
 }
 
 .page-header h1 {
     font-size: 44px;
-
     margin-bottom: 12px;
 }
 
 .page-header p {
     font-size: 18px;
-
     color: #d9eef1;
-
     max-width: 750px;
 }
 
 
 /* =========================================
    CONTACT
-   ========================================= */
+========================================= */
 
 .contact-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 40px;
 }
 
 .contact-box {
     background: #f2f8fa;
-
     padding: 30px;
-
     border: 1px solid #d6e6ea;
-
     border-left: 4px solid #8bd5df;
 }
 
 .contact-box h3 {
     color: #29485c;
-
     margin-bottom: 15px;
-
     font-size: 21px;
 }
 
 .contact-box p {
     color: #52636d;
-
     margin-bottom: 10px;
 }
 
 .contact-box a {
     color: #287c8a;
-
     text-decoration: none;
 }
 
@@ -307,10 +262,9 @@ nav a:hover {
 }
 
 
-
-/* ==================================
+/* =========================================
    UNIFER FLOWING WAVE FOOTER
-================================== */
+========================================= */
 
 footer {
     position: relative;
@@ -329,66 +283,79 @@ footer {
     border-top: 3px solid #8bd5df;
 }
 
-/* First soft flowing wave */
+
+/* Soft flowing wave - lower section */
+
 footer::before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 
-    left: -10%;
-    bottom: -125px;
+    left: -15%;
+    bottom: -190px;
 
-    width: 120%;
-    height: 270px;
+    width: 130%;
+    height: 390px;
 
     background:
         radial-gradient(
             ellipse at 50% 0%,
-            rgba(83, 174, 190, 0.16) 0%,
-            rgba(83, 174, 190, 0.08) 42%,
-            transparent 72%
+            rgba(74, 157, 177, 0.20) 0%,
+            rgba(74, 157, 177, 0.11) 38%,
+            rgba(74, 157, 177, 0.04) 62%,
+            transparent 78%
         );
 
-    border-radius: 50% 50% 0 0 / 35% 35% 0 0;
+    border-radius: 48% 52% 0 0 / 28% 32% 0 0;
 
-    transform: rotate(-4deg);
+    transform: rotate(-5deg);
     pointer-events: none;
 }
 
-/* Second subtle flowing wave */
+
+/* Second flowing colour layer */
+
 footer::after {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 
-    left: -15%;
-    bottom: -175px;
+    left: -20%;
+    bottom: -235px;
 
-    width: 130%;
-    height: 300px;
+    width: 140%;
+    height: 370px;
 
     background:
         radial-gradient(
-            ellipse at 60% 0%,
-            rgba(139, 213, 223, 0.10) 0%,
-            rgba(139, 213, 223, 0.045) 48%,
-            transparent 75%
+            ellipse at 65% 0%,
+            rgba(139, 213, 223, 0.13) 0%,
+            rgba(139, 213, 223, 0.07) 40%,
+            rgba(139, 213, 223, 0.025) 65%,
+            transparent 80%
         );
 
-    border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+    border-radius: 55% 45% 0 0 / 35% 28% 0 0;
 
-    transform: rotate(3deg);
+    transform: rotate(4deg);
     pointer-events: none;
 }
 
 
+/* Keep all footer content above the waves */
 
-/* Footer content */
+.footer-content,
+.footer-bottom {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   FOOTER CONTENT
+========================================= */
 
 .footer-content {
-    position: relative;
-    z-index: 2;
-
     max-width: 1100px;
     margin: 0 auto;
 
@@ -403,7 +370,7 @@ footer::after {
 }
 
 
-/* Brand section */
+/* BRAND SECTION */
 
 .footer-brand {
     max-width: 330px;
@@ -412,30 +379,25 @@ footer::after {
 .footer-logo {
     width: 220px;
     height: auto;
-
     display: block;
-
     margin-bottom: 20px;
 }
 
 .footer-tagline {
     color: #d5ebee;
-
     font-size: 15px;
-
     line-height: 1.7;
-
     max-width: 300px;
 }
 
 
-/* Social icons */
+/* =========================================
+   SOCIAL ICONS
+========================================= */
 
 .footer-social {
     display: flex;
-
     gap: 12px;
-
     margin-top: 25px;
 }
 
@@ -444,7 +406,6 @@ footer::after {
     height: 42px;
 
     border: 1px solid #8bd5df;
-
     border-radius: 50%;
 
     display: flex;
@@ -452,9 +413,7 @@ footer::after {
     justify-content: center;
 
     color: #e7f5f7;
-
     text-decoration: none;
-
     font-size: 17px;
     font-weight: 700;
 
@@ -464,23 +423,24 @@ footer::after {
 .footer-social a:hover {
     background: #8bd5df;
     color: #173b50;
-
     transform: translateY(-2px);
 }
 
 
-/* Footer headings */
+/* =========================================
+   FOOTER HEADINGS
+========================================= */
 
 .footer-column h3 {
     color: #ffffff;
-
     font-size: 18px;
-
     margin-bottom: 20px;
 }
 
 
-/* Quick links */
+/* =========================================
+   QUICK LINKS
+========================================= */
 
 .footer-links {
     list-style: none;
@@ -492,11 +452,8 @@ footer::after {
 
 .footer-links a {
     color: #c9e1e5;
-
     text-decoration: none;
-
     font-size: 14px;
-
     transition: 0.2s ease;
 }
 
@@ -505,7 +462,9 @@ footer::after {
 }
 
 
-/* Contact */
+/* =========================================
+   CONTACT DETAILS
+========================================= */
 
 .footer-contact {
     list-style: none;
@@ -513,35 +472,25 @@ footer::after {
 
 .footer-contact li {
     display: flex;
-
     align-items: flex-start;
-
     gap: 13px;
-
     margin-bottom: 18px;
 
     color: #c9e1e5;
-
     font-size: 14px;
-
     line-height: 1.6;
 }
 
 .footer-contact-icon {
     width: 22px;
-
     flex-shrink: 0;
-
     color: #8bd5df;
-
     font-size: 17px;
-
     text-align: center;
 }
 
 .footer-contact a {
     color: #c9e1e5;
-
     text-decoration: none;
 }
 
@@ -550,35 +499,30 @@ footer::after {
 }
 
 
-/* Bottom copyright */
+/* =========================================
+   COPYRIGHT AND ENVISAGE CREDIT
+========================================= */
 
 .footer-bottom {
-    position: relative;
-
-    z-index: 2;
-
     max-width: 1100px;
-
     margin: 40px auto 0;
-
     padding-top: 22px;
 
     border-top: 1px solid rgba(218, 241, 244, 0.3);
 
     text-align: center;
-
     color: #bcd5d9;
-
     font-size: 13px;
 }
 
-/* Envisage website credit styling */
 .footer-credit {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+
     margin-top: 5px;
+
     color: #ffffff;
     font-size: 12px;
     line-height: 1.6;
@@ -605,7 +549,7 @@ footer::after {
 
 /* =========================================
    FOOTER MOBILE
-   ========================================= */
+========================================= */
 
 @media (max-width: 900px) {
 
@@ -615,7 +559,6 @@ footer::after {
 
     .footer-content {
         grid-template-columns: 1fr;
-
         gap: 40px;
     }
 
@@ -632,7 +575,7 @@ footer::after {
 
 /* =========================================
    MOBILE
-   ========================================= */
+========================================= */
 
 @media (max-width: 900px) {
 
@@ -643,9 +586,7 @@ footer::after {
 
     header {
         padding: 12px 25px;
-
         flex-direction: column;
-
         gap: 12px;
     }
 
@@ -709,5 +650,9 @@ footer::after {
 
     nav {
         gap: 16px;
+    }
+
+    .footer-credit {
+        flex-wrap: wrap;
     }
 }
