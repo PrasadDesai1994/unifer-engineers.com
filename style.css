@@ -562,6 +562,36 @@ footer::before {
     font-size: 13px;
 }
 
+/* Envisage website credit styling */
+.footer-credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-credit img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-credit a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.footer-credit a:hover {
+    color: #8bd5df;
+}
+
 
 /* =========================================
    FOOTER MOBILE
