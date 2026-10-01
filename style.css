@@ -307,20 +307,286 @@ nav a:hover {
 }
 
 
+
 /* =========================================
-   FOOTER
+   ENGINEERING FOOTER
    ========================================= */
 
 footer {
-    background: #243d4d;
+    position: relative;
+    overflow: hidden;
 
-    color: #d9eef1;
+    background: #173b50;
+    color: #e7f5f7;
+
+    padding: 65px 70px 25px;
+
+    border-top: 4px solid #8bd5df;
+}
+
+
+/* Technical engineering background */
+
+footer::before {
+    content: "";
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.13;
+
+    background-image:
+        linear-gradient(
+            30deg,
+            transparent 48%,
+            #8bd5df 49%,
+            transparent 50%
+        ),
+        linear-gradient(
+            150deg,
+            transparent 48%,
+            #8bd5df 49%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 15% 25%,
+            transparent 0,
+            transparent 42px,
+            #8bd5df 43px,
+            transparent 44px
+        ),
+        radial-gradient(
+            circle at 82% 70%,
+            transparent 0,
+            transparent 55px,
+            #8bd5df 56px,
+            transparent 57px
+        );
+
+    background-size:
+        120px 120px,
+        120px 120px,
+        220px 220px,
+        280px 280px;
+
+    pointer-events: none;
+}
+
+
+/* Footer content */
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        0.8fr
+        1.5fr;
+
+    gap: 70px;
+}
+
+
+/* Brand section */
+
+.footer-brand {
+    max-width: 330px;
+}
+
+.footer-logo {
+    width: 220px;
+    height: auto;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+.footer-tagline {
+    color: #d5ebee;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 300px;
+}
+
+
+/* Social icons */
+
+.footer-social {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.footer-social a {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #8bd5df;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e7f5f7;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.footer-social a:hover {
+    background: #8bd5df;
+    color: #173b50;
+
+    transform: translateY(-2px);
+}
+
+
+/* Footer headings */
+
+.footer-column h3 {
+    color: #ffffff;
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Quick links */
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 11px;
+}
+
+.footer-links a {
+    color: #c9e1e5;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #8bd5df;
+}
+
+
+/* Contact */
+
+.footer-contact {
+    list-style: none;
+}
+
+.footer-contact li {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 18px;
+
+    color: #c9e1e5;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.footer-contact-icon {
+    width: 22px;
+
+    flex-shrink: 0;
+
+    color: #8bd5df;
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+.footer-contact a {
+    color: #c9e1e5;
+
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #8bd5df;
+}
+
+
+/* Bottom copyright */
+
+.footer-bottom {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(218, 241, 244, 0.3);
 
     text-align: center;
 
-    padding: 28px 20px;
+    color: #bcd5d9;
 
     font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    footer {
+        padding: 55px 30px 25px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+
 }
 
 
