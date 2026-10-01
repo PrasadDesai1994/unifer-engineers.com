@@ -1,6 +1,6 @@
 /* =========================================
    UNIFER ENGINEERS
-   Main Website Styles
+   Corporate Website
    ========================================= */
 
 * {
@@ -15,10 +15,24 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: #dfecef;
     color: #29485c;
-    background: #ffffff;
     line-height: 1.6;
 }
+
+
+/* =========================================
+   WEBSITE FRAME
+   ========================================= */
+
+.site-frame {
+    max-width: 1380px;
+    margin: 25px auto;
+    background: #ffffff;
+    border: 1px solid #b9cdd3;
+    box-shadow: 0 8px 35px rgba(35, 65, 80, 0.12);
+}
+
 
 /* =========================================
    HEADER
@@ -26,137 +40,159 @@ body {
 
 header {
     background: #29485c;
-    padding: 16px 7%;
+    min-height: 105px;
+    padding: 12px 55px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 90px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
 }
+
+
+/* LOGO */
 
 .logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo img {
-    width: 180px;
-    height: 70px;
+    width: 205px;
+    height: 82px;
     object-fit: contain;
+
+    /* helps the square logo visually blend */
+    mix-blend-mode: screen;
 }
+
+
+/* NAVIGATION */
 
 nav {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 38px;
 }
 
 nav a {
-    color: #e3f4f7;
+    color: #e5f5f7;
     text-decoration: none;
+
     font-size: 16px;
     font-weight: 600;
-    transition: 0.3s ease;
+
+    transition: 0.25s ease;
 }
 
 nav a:hover {
     color: #91dce5;
 }
 
+
 /* =========================================
    HERO
    ========================================= */
 
 .hero {
-    min-height: 560px;
     background: #29485c;
-    color: #ffffff;
+
+    min-height: 520px;
+
     display: flex;
     align-items: center;
-    padding: 90px 8%;
+
+    padding: 85px 85px;
+
+    color: #ffffff;
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 760px;
 }
 
 .hero h1 {
-    font-size: 56px;
+    font-size: 54px;
     line-height: 1.12;
+
     margin-bottom: 25px;
+
     font-weight: 700;
 }
 
 .hero p {
-    font-size: 21px;
-    line-height: 1.7;
-    max-width: 780px;
+    max-width: 720px;
+
+    font-size: 19px;
+    line-height: 1.8;
+
     color: #d9eef1;
 }
 
+
 /* =========================================
-   BUTTONS
+   BUTTON
    ========================================= */
 
 .btn {
     display: inline-block;
-    margin-top: 32px;
+
+    margin-top: 30px;
+
     padding: 14px 28px;
+
     background: #8bd5df;
     color: #29485c;
+
     text-decoration: none;
+
+    font-size: 15px;
     font-weight: 700;
+
     border-radius: 3px;
-    transition: 0.3s ease;
+
+    transition: 0.25s ease;
 }
 
 .btn:hover {
     background: #ffffff;
 }
 
-/* =========================================
-   PAGE HEADER
-   ========================================= */
-
-.page-header {
-    background: #29485c;
-    color: #ffffff;
-    padding: 80px 8%;
-}
-
-.page-header h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.page-header p {
-    font-size: 19px;
-    color: #d9eef1;
-    max-width: 800px;
-}
 
 /* =========================================
-   CONTENT
+   CONTENT CONTAINER
    ========================================= */
 
 .container {
-    width: 84%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 80px 0;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 75px 50px;
 }
 
 .section-title {
-    font-size: 34px;
     color: #29485c;
-    margin-bottom: 20px;
+
+    font-size: 32px;
+
+    line-height: 1.25;
+
+    margin-bottom: 22px;
 }
 
 .section-text {
-    font-size: 17px;
+    max-width: 950px;
+
+    font-size: 16px;
+
     color: #52636d;
-    margin-bottom: 22px;
-    max-width: 1000px;
+
+    margin-bottom: 20px;
 }
+
 
 /* =========================================
    CARDS
@@ -164,26 +200,65 @@ nav a:hover {
 
 .cards {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 40px;
+
+    gap: 22px;
+
+    margin-top: 35px;
 }
 
 .card {
-    background: #f1f8fa;
-    padding: 32px;
-    border-left: 4px solid #8bd5df;
+    background: #f2f8fa;
+
+    padding: 28px;
+
+    border: 1px solid #d6e6ea;
+
+    border-top: 4px solid #8bd5df;
 }
 
 .card h3 {
     color: #29485c;
-    font-size: 20px;
-    margin-bottom: 12px;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
 }
 
 .card p {
     color: #596a73;
+
+    font-size: 15px;
 }
+
+
+/* =========================================
+   PAGE HEADER
+   ========================================= */
+
+.page-header {
+    background: #29485c;
+
+    color: #ffffff;
+
+    padding: 65px 85px;
+}
+
+.page-header h1 {
+    font-size: 44px;
+
+    margin-bottom: 12px;
+}
+
+.page-header p {
+    font-size: 18px;
+
+    color: #d9eef1;
+
+    max-width: 750px;
+}
+
 
 /* =========================================
    CONTACT
@@ -191,29 +266,39 @@ nav a:hover {
 
 .contact-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+
+    gap: 40px;
 }
 
 .contact-box {
-    background: #f1f8fa;
-    padding: 35px;
+    background: #f2f8fa;
+
+    padding: 30px;
+
+    border: 1px solid #d6e6ea;
+
     border-left: 4px solid #8bd5df;
 }
 
 .contact-box h3 {
     color: #29485c;
-    margin-bottom: 18px;
-    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    font-size: 21px;
 }
 
 .contact-box p {
-    margin-bottom: 12px;
     color: #52636d;
+
+    margin-bottom: 10px;
 }
 
 .contact-box a {
     color: #287c8a;
+
     text-decoration: none;
 }
 
@@ -221,32 +306,46 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
 /* =========================================
    FOOTER
    ========================================= */
 
 footer {
     background: #243d4d;
+
     color: #d9eef1;
+
     text-align: center;
-    padding: 30px 20px;
-    font-size: 14px;
+
+    padding: 28px 20px;
+
+    font-size: 13px;
 }
+
 
 /* =========================================
    MOBILE
    ========================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+
+    .site-frame {
+        margin: 0;
+        border: none;
+    }
 
     header {
+        padding: 12px 25px;
+
         flex-direction: column;
-        gap: 15px;
-        padding: 18px 5%;
+
+        gap: 12px;
     }
 
     .logo img {
-        width: 160px;
+        width: 190px;
+        height: 75px;
     }
 
     nav {
@@ -254,20 +353,11 @@ footer {
     }
 
     .hero {
-        padding: 75px 7%;
-        min-height: 500px;
+        padding: 70px 45px;
     }
 
     .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .page-header h1 {
-        font-size: 38px;
+        font-size: 42px;
     }
 
     .cards {
@@ -279,7 +369,39 @@ footer {
     }
 
     .container {
-        width: 90%;
-        padding: 60px 0;
+        padding: 60px 35px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 60px 25px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .page-header {
+        padding: 55px 25px;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 50px 25px;
+    }
+
+    nav {
+        gap: 16px;
     }
 }
