@@ -1,1 +1,628 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Unifer Engineers Pvt. Ltd.</title>
+
+    <meta
+        name="description"
+        content="Contact Unifer Engineers for industrial process equipment, technical sales, engineering solutions, OEM partnerships and business enquiries in India."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* CONTACT PAGE */
+
+        .contact-intro {
+            background: #29485c;
+            color: #ffffff;
+            padding: 65px 50px;
+            text-align: center;
+        }
+
+        .contact-intro h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .contact-intro p {
+            max-width: 750px;
+            margin: 0 auto;
+            color: #d9eef1;
+            font-size: 17px;
+        }
+
+        .contact-page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 65px 35px 80px;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.8fr 1.4fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .contact-information {
+            background: #29485c;
+            color: #ffffff;
+            padding: 35px;
+            border-top: 4px solid #8bd5df;
+        }
+
+        .contact-information h2 {
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+
+        .contact-information p {
+            color: #d9eef1;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-detail {
+            margin-bottom: 24px;
+        }
+
+        .contact-detail h3 {
+            color: #8bd5df;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .contact-detail p,
+        .contact-detail a {
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: none;
+            line-height: 1.7;
+        }
+
+        .contact-form-wrapper {
+            background: #f4f9fa;
+            padding: 38px;
+            border: 1px solid #d6e6ea;
+            border-top: 4px solid #8bd5df;
+        }
+
+        .contact-form-wrapper h2 {
+            color: #29485c;
+            font-size: 27px;
+            margin-bottom: 8px;
+        }
+
+        .form-description {
+            color: #647680;
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+
+        .enquiry-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-field.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-field label {
+            color: #29485c;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-field input,
+        .form-field select,
+        .form-field textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #cbdde2;
+            border-radius: 3px;
+            background: #ffffff;
+            color: #29485c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        .form-field input:focus,
+        .form-field select:focus,
+        .form-field textarea:focus {
+            outline: none;
+            border-color: #287c8a;
+            box-shadow: 0 0 0 2px rgba(139, 213, 223, 0.2);
+        }
+
+        .form-field textarea {
+            min-height: 145px;
+            resize: vertical;
+        }
+
+        .form-consent {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #52636d;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .form-consent input {
+            margin-top: 4px;
+        }
+
+        .form-submit {
+            grid-column: 1 / -1;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 3px;
+            background: #29485c;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.25s ease;
+        }
+
+        .form-submit:hover {
+            background: #287c8a;
+        }
+
+        .form-note {
+            grid-column: 1 / -1;
+            color: #647680;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 800px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-intro h1 {
+                font-size: 34px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .contact-intro {
+                padding: 50px 25px;
+            }
+
+            .contact-page {
+                padding: 40px 20px;
+            }
+
+            .contact-form-wrapper,
+            .contact-information {
+                padding: 25px;
+            }
+
+            .enquiry-form {
+                grid-template-columns: 1fr;
+            }
+
+            .form-field.full-width,
+            .form-consent,
+            .form-submit,
+            .form-note {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="site-frame">
+
+    <!-- HEADER -->
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Unifer Engineers">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- PAGE INTRO -->
+
+    <section class="contact-intro">
+        <h1>Let's Discuss Your Requirements</h1>
+
+        <p>
+            Whether you are an industrial customer seeking
+            engineering solutions or an international
+            manufacturer exploring opportunities in India,
+            we would be pleased to hear from you.
+        </p>
+    </section>
+
+    <!-- CONTACT BODY -->
+
+    <main class="contact-page">
+
+        <div class="contact-layout">
+
+            <!-- CONTACT INFORMATION -->
+
+            <aside class="contact-information">
+
+                <h2>Get in Touch</h2>
+
+                <p>
+                    Connect with our team for technical enquiries,
+                    product representation, business partnerships
+                    and project discussions.
+                </p>
+
+                <div class="contact-detail">
+                    <h3>Phone</h3>
+                    <a href="tel:+919511807410">
+                        +91 95118 07410
+                    </a>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Email</h3>
+                    <a href="mailto:uniferengineers@gmail.com">
+                        uniferengineers@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Office Address</h3>
+                    <p>
+                        MONT VERT PRISTINE, B4/501,<br>
+                        Aundh Rd, Chikhalwadi,<br>
+                        Khadki, Pune,<br>
+                        Maharashtra 411020, India.
+                    </p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Business Hours</h3>
+                    <p>
+                        Monday to Friday<br>
+                        9:30 AM – 6:00 PM IST
+                    </p>
+                </div>
+
+            </aside>
+
+            <!-- ENQUIRY FORM -->
+
+            <section class="contact-form-wrapper">
+
+                <h2>Send Us an Enquiry</h2>
+
+                <p class="form-description">
+                    Please complete the form below.
+                    Our team will review your enquiry.
+                </p>
+
+     
+<form
+    class="enquiry-form"
+    action="https://script.google.com/macros/s/AKfycbxeuszYuqNpt5DHd5UZHRkmeJRcLIUAk0_uzky1Og8hI9DTSVejy32lruINMtLAq5XXig/exec"
+    method="POST"
+>
+ 
+
+                    <div class="form-field">
+                        <label for="name">Full Name *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            maxlength="100"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="company">Company Name *</label>
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            autocomplete="organization"
+                            maxlength="150"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Business Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            maxlength="254"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                            maxlength="30"
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="country">Country *</label>
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            autocomplete="country-name"
+                            maxlength="80"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="enquiry-type">Enquiry Type *</label>
+
+                        <select
+                            id="enquiry-type"
+                            name="enquiry_type"
+                            required
+                        >
+                            <option value="">Select an option</option>
+                            <option value="Product Enquiry">
+                                Product Enquiry
+                            </option>
+                            <option value="Technical Consultation">
+                                Technical Consultation
+                            </option>
+                            <option value="OEM Partnership">
+                                OEM Partnership
+                            </option>
+                            <option value="Business Representation in India">
+                                Business Representation in India
+                            </option>
+                            <option value="Project Enquiry">
+                                Project Enquiry
+                            </option>
+                            <option value="Service and Spares">
+                                Service and Spares
+                            </option>
+                            <option value="Other">
+                                Other
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="product">
+                            Product or Service of Interest
+                        </label>
+
+                        <input
+                            type="text"
+                            id="product"
+                            name="product_or_service"
+                            placeholder="e.g. Decanter centrifuges, separators, wastewater solutions"
+                            maxlength="200"
+                        >
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="message">Your Message *</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Please describe your requirements..."
+                            maxlength="5000"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <label class="form-consent">
+                        <input
+                            type="checkbox"
+                            name="privacy_consent"
+                            value="Agreed"
+                            required
+                        >
+
+                        <span>
+                            I agree to Unifer Engineers using the
+                            information submitted to respond to
+                            my enquiry. *
+                        </span>
+                    </label>
+
+                    <!-- Basic spam honeypot -->
+                    <input
+                        type="text"
+                        name="_gotcha"
+                        style="display:none"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="submit"
+                        class="form-submit"
+                    >
+                        Submit Enquiry
+                    </button>
+
+                    <p class="form-note">
+                        Fields marked with * are required.
+                        Please do not submit passwords or sensitive
+                        personal information.
+                    </p>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <img
+                    src="logo.png"
+                    alt="Unifer Engineers"
+                    class="footer-logo"
+                >
+
+                <p class="footer-tagline">
+                    Technical engineering, business development
+                    and market representation for the Indian
+                    process industries.
+                </p>
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.linkedin.com/company/unifer-engineers/posts/?feedView=all"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Unifer Engineers LinkedIn"
+                    >in</a>
+
+                    <a
+                        href="https://maps.app.goo.gl/gqWMENMD5XeKUdK4A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Unifer Engineers Google Maps"
+                    >G</a>
+
+                </div>
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul class="footer-contact">
+
+                    <li>
+                        <span class="footer-contact-icon">☎</span>
+                        <span>
+                            <a href="tel:+919511807410">
+                                +91 95118 07410
+                            </a>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="footer-contact-icon">✉</span>
+                        <span>
+                            <a href="mailto:uniferengineers@gmail.com">
+                                uniferengineers@gmail.com
+                            </a>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="footer-contact-icon">◎</span>
+                        <span>
+                            <a
+                                href="https://maps.app.goo.gl/gqWMENMD5XeKUdK4A"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                MONT VERT PRISTINE, B4/501,<br>
+                                Aundh Rd, Chikhalwadi,<br>
+                                Khadki, Pune,<br>
+                                Maharashtra 411020, India.
+                            </a>
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div>
+                © 2026 Unifer Engineers Pvt. Ltd.
+                All Rights Reserved.
+            </div>
+
+            <div class="footer-credit">
+
+                <span>Website created by</span>
+
+                <img
+                    src="envisage-mark.png"
+                    alt="Envisage"
+                >
+
+                <a
+                    href="https://envisagetechx.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Envisage Tech Consultancy Pty Ltd
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</div>
+
+</body>
+</html>
+
