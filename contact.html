@@ -323,16 +323,15 @@
                     Our team will review your enquiry.
                 </p>
 
-     
+
 <form
     class="enquiry-form"
     action="https://script.google.com/macros/s/AKfycbzCwmeTU49TCq5eHbubhSEZMMA96vA-FM6vrtfo2X1LFP37uI4IuavqqeASmPUjxK1Yog/exec"
     method="POST"
 >
 
-
-    <!-- Name -->
-    <div class="form-group">
+    <!-- Full Name -->
+    <div class="form-field">
         <label for="name">Full Name *</label>
         <input
             type="text"
@@ -343,8 +342,8 @@
         >
     </div>
 
-    <!-- Company -->
-    <div class="form-group">
+    <!-- Company Name -->
+    <div class="form-field">
         <label for="company">Company Name</label>
         <input
             type="text"
@@ -354,8 +353,8 @@
         >
     </div>
 
-    <!-- Email -->
-    <div class="form-group">
+    <!-- Email Address -->
+    <div class="form-field">
         <label for="email">Email Address *</label>
         <input
             type="email"
@@ -366,8 +365,8 @@
         >
     </div>
 
-    <!-- Phone -->
-    <div class="form-group">
+    <!-- Phone Number -->
+    <div class="form-field">
         <label for="phone">Phone Number</label>
         <input
             type="tel"
@@ -377,8 +376,8 @@
         >
     </div>
 
-    <!-- Message -->
-    <div class="form-group">
+    <!-- Enquiry Message -->
+    <div class="form-field full-width">
         <label for="message">Your Enquiry *</label>
         <textarea
             id="message"
@@ -389,12 +388,41 @@
         ></textarea>
     </div>
 
-    <!-- Submit button -->
-    <button type="submit">
+    <!-- Privacy Consent -->
+    <div class="form-consent">
+        <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            value="Yes"
+            required
+        >
+
+        <label for="consent">
+            I agree to Unifer Engineers using my information
+            to respond to this enquiry.
+        </label>
+    </div>
+
+    <!-- Spam Protection -->
+    <div style="display:none;">
+        <label for="_gotcha">Leave this field empty</label>
+        <input
+            type="text"
+            id="_gotcha"
+            name="_gotcha"
+            tabindex="-1"
+            autocomplete="off"
+        >
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="form-submit">
         Submit Enquiry
     </button>
 
 </form>
+
 
 
             </section>
